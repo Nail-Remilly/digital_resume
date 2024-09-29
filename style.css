@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One'); 
+
+header{
+    position: sticky;
+    top: 0;
+    height: 20px;
+}
+
+.background_nav{
+    background: transparent;
+    backdrop-filter: blur(4px);
+}
+
+header p{
+    font-family: NeueMontreal;
+    opacity: 0.85;
+}
+
+.background_image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, rgba(23,28,32,1) 1%, rgba(23,28,32,0) 25%), url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: none;
+    filter: blur(4px);
+    z-index: -1;
+    background-position: right; 
+}
+
+.content{
+    filter: blur(0px);
+}
+
+.h1{
+    font-family: Sinera;
+    font-size: 4vw;
+}
+
+.h2{
+    font-family: Sinera;
+    padding-bottom: 1vw;
+}
+
+.date{
+    font-family: Sinera;
+}
+
+.bordered_bot{
+    border-bottom: solid;
+    opacity: 0.1;
+}
+
+p{
+    font-family: NeueMontreal;
+}
+
+.separation{
+    height: 10vw;
+    width: 100%;
+    display: block;
+}
+
+.b_to_r{ 
+    background-image: linear-gradient(to bottom, #171c20, #f24333);
+}
+
+.r_to_b{ 
+    background-image: linear-gradient(to bottom, #f24333, #171c20);
+}
+
+@font-face {
+    font-family: "Sinera";
+    src:url("font/sinera/Sinera.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src:url("font/NeueMontreal/NeueMontreal-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 1024px) {
+    .name{
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+    }
+    
+    .name span{
+        font-size: 12vw;
+        font-family: Sinera;
+    }
+    
+    .lastname{
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
+    
+    .lastname span{
+        font-size: 12vw;
+        font-family: Sinera;
+    }
+
+    .h2{
+        font-size: 9vw;
+    }
+
+    .h1{
+        font-size: 12vw;
+    }
+
+    .hide_pho{
+        display: none;
+    }
+
+    .bordered_bot{
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .name{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    
+    .name span{
+        font-size: 5vw;
+        font-family: Sinera;
+    }
+    
+    .lastname{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .lastname span{
+        font-size: 5vw;
+        font-family: Sinera;
+    }
+
+    .h2{
+        font-size: 2vw;
+    }
+
+    .h1{
+        font-size: 4vw;
+    }
+
+    .hide_lap{
+        display: none;
+    }
+
+    .bordered_bot{
+        margin-right: 0vw;
+        margin-left: 0vw;
+    }
+}
+
+.wrapper{
+    margin-top: 1vw;
+}
+  
+.button_school a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #171c20;
+    border: 2px solid #171c20;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+  
+.button_school a span{
+    position: relative;
+    z-index: 2;
+}
+  
+.button_school a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #171c20;
+    transition: all .35s;
+}
+  
+.button_school a:hover{
+    color: #F24333;
+}
+  
+.button_school a:hover:after{
+    width: 100%;
+}
